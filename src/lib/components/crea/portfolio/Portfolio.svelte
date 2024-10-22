@@ -33,7 +33,7 @@ darkMode.subscribe(value => {
 
 <div class="transition-colors duration-500 flex flex-col items-center justify-center pt-[30px]  pb-[30px] bg-[#f4f3fc] dark:bg-[#0C0C12]" id="portfolio">
 
-  <div class="w-full h-[2px] mb-7" style="background: linear-gradient(to right, transparent 10%, #5865f2 50%, #5865f2 50%, transparent 90%);"></div>
+  <div class="w-full h-[3px] mb-7" style="background: linear-gradient(to right, transparent 10%, #5865f2 50%, #5865f2 50%, transparent 90%);"></div>
 
   <h1 class="transition-all duration-500 font-extrabold pb-9 underline text-[40px] text-[#ff9900] dark:text-[#FFC000] font-family: 'Outfit', sans-serif" id="technologies">Mes créations :</h1>
 
@@ -53,37 +53,37 @@ darkMode.subscribe(value => {
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
-          <a href="https://svelte.dev/" target="_blank" class="mr-2">
+          <a href="https://svelte.dev/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={svelted} alt="Svelte Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={sveltew} alt="Svelte Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://tailwindcss.com/" target="_blank" class="mr-2">
+          <a href="https://tailwindcss.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tailwindd} alt="TailwindCSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tailwindw} alt="TailwindCSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-[-20px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={htmld} alt="HTML Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={htmlw} alt="HTML Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={cssd} alt="CSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={cssw} alt="CSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={jsd} alt="JavaScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={jsw} alt="JavaScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://typescriptlang.com/" target="_blank" class="mr-2">
+          <a href="https://typescriptlang.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tsd} alt="TypeScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tsw} alt="TypeScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
@@ -107,37 +107,37 @@ darkMode.subscribe(value => {
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
-          <a href="https://svelte.dev/" target="_blank" class="mr-2">
+          <a href="https://svelte.dev/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={svelted} alt="Svelte Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={sveltew} alt="Svelte Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://tailwindcss.com/" target="_blank" class="mr-2">
+          <a href="https://tailwindcss.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tailwindd} alt="TailwindCSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tailwindw} alt="TailwindCSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={htmld} alt="HTML Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={htmlw} alt="HTML Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={cssd} alt="CSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={cssw} alt="CSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={jsd} alt="JavaScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={jsw} alt="JavaScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://typescriptlang.com/" target="_blank" class="mr-2">
+          <a href="https://typescriptlang.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tsd} alt="TypeScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tsw} alt="TypeScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
@@ -169,37 +169,37 @@ darkMode.subscribe(value => {
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
-          <a href="https://svelte.dev/" target="_blank" class="mr-2">
+          <a href="https://svelte.dev/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={svelted} alt="Svelte Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={sveltew} alt="Svelte Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://tailwindcss.com/" target="_blank" class="mr-2">
+          <a href="https://tailwindcss.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tailwindd} alt="TailwindCSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tailwindw} alt="TailwindCSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={htmld} alt="HTML Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={htmlw} alt="HTML Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={cssd} alt="CSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={cssw} alt="CSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={jsd} alt="JavaScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={jsw} alt="JavaScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://typescriptlang.com/" target="_blank" class="mr-2">
+          <a href="https://typescriptlang.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tsd} alt="TypeScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tsw} alt="TypeScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
@@ -234,37 +234,37 @@ darkMode.subscribe(value => {
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
-          <a href="https://svelte.dev/" target="_blank" class="mr-2">
+          <a href="https://svelte.dev/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={svelted} alt="Svelte Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={sveltew} alt="Svelte Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://tailwindcss.com/" target="_blank" class="mr-2">
+          <a href="https://tailwindcss.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tailwindd} alt="TailwindCSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tailwindw} alt="TailwindCSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={htmld} alt="HTML Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={htmlw} alt="HTML Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={cssd} alt="CSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={cssw} alt="CSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={jsd} alt="JavaScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={jsw} alt="JavaScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://typescriptlang.com/" target="_blank" class="mr-2">
+          <a href="https://typescriptlang.com/" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={tsd} alt="TypeScript Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={tsw} alt="TypeScript Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
@@ -294,13 +294,13 @@ darkMode.subscribe(value => {
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={htmld} alt="HTML Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={htmlw} alt="HTML Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={cssd} alt="CSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={cssw} alt="CSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
@@ -330,13 +330,13 @@ darkMode.subscribe(value => {
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
-          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={htmld} alt="HTML Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={htmlw} alt="HTML Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
             </div>            
           </a>
-          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="mr-2">
+          <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="transition-all duration-150 mr-[-20px] hover:mr-[5px]">
             <div class="relative transition-colors duration-500 bg-[#c4c6d6] dark:bg-[#0f0f18] hover:bg-[#aaacbb] dark:hover:bg-[#161624] p-[10px] rounded-full w-[42px] h-[42px] border-[0.5px] border-solid border-[#aaacbb] dark:border-[#3a3a5a] hover:border-[#777985] dark:hover:border-[#4f4f79]">
               <img src={cssd} alt="CSS Noir" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5'}>
               <img src={cssw} alt="CSS Blanc" class={$darkMode ? 'absolute transition-opacity duration-500 ease-in-out opacity-0 h-5' : 'absolute transition-opacity duration-500 ease-in-out opacity-100 h-5'}>
