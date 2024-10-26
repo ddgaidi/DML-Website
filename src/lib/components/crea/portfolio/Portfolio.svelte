@@ -39,7 +39,7 @@ darkMode.subscribe(value => {
 
   <div class="flex flex-row" id="row">
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[400px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://geodia.vercel.app/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
           Voir
@@ -93,7 +93,7 @@ darkMode.subscribe(value => {
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[400px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://khadra.vercel.app/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
           Voir
@@ -149,16 +149,16 @@ darkMode.subscribe(value => {
 
     
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[400px] mr-[25px] p-5 rounded-[10px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] mr-[25px] p-5 rounded-[10px] relative" id="crea-container">
       <a href="https://dml-portfolio.vercel.app/" target="_blank">
-        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[147px]" id="github-redirection">
+        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
           Voir
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>     
       <a href="https://github.com/DMLSurGithub/dml-website" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Open Source
+          Code
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>
@@ -214,16 +214,16 @@ darkMode.subscribe(value => {
 
   <div class="flex flex-row mt-[25px]" id="row">
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[400px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://dml-website-old.vercel.app/" target="_blank">
-        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[147px]" id="github-redirection">
+        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
           Voir
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>     
       <a href="https://github.com/DMLSurGithub/dml-website-old" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Open Source
+          Code
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>         
@@ -274,16 +274,16 @@ darkMode.subscribe(value => {
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[400px] mr-[25px] p-5 rounded-[10px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] mr-[25px] p-5 rounded-[10px] relative" id="crea-container">
       <a href="https://discord-invitation.vercel.app" target="_blank">
-        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[147px]" id="github-redirection">
+        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
           Voir
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a> 
       <a href="https://github.com/DMLSurGithub/Discord-Invitation" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Open Source
+          Code
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>         
@@ -310,16 +310,16 @@ darkMode.subscribe(value => {
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[400px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://securebits.vercel.app" target="_blank">
-        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[147px]" id="github-redirection">
+        <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
           Voir
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a> 
       <a href="https://github.com/DMLSurGithub/SecureBits" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Open Source
+          Code
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>          
