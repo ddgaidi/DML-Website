@@ -24,6 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"cookie-muncher": "^0.4.3",
+		"nodemailer": "^6.9.16",
 		"svelte-clipboard": "^1.0.0"
 	}
 }
