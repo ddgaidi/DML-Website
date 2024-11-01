@@ -1,4 +1,5 @@
 <script>
+  import { lang } from '../../../store/lang';
   import { darkMode } from '../../../store/dark.js';
   
   import htmld from '../../../images/SVG/technod/htmld.svg';
@@ -26,30 +27,38 @@
 
   let darkModeValue = false;
 
-darkMode.subscribe(value => {
-  darkModeValue = value;
-});
+  darkMode.subscribe(value => {
+    darkModeValue = value;
+  });
 </script>
 
 <div class="transition-colors duration-500 flex flex-col items-center justify-center pt-[30px]  pb-[30px] bg-[#f4f3fc] dark:bg-[#0C0C12]" id="portfolio">
 
   <div class="w-full h-[3px] mb-7" style="background: linear-gradient(to right, transparent 10%, #5865f2 50%, #5865f2 50%, transparent 90%);"></div>
 
-  <h1 class="transition-all duration-500 font-extrabold pb-9 underline text-[40px] text-[#ff9900] dark:text-[#FFC000] font-family: 'Outfit', sans-serif" id="technologies">Mes créations :</h1>
+  <h1 class="transition-all duration-500 font-extrabold pb-9 underline text-[40px] text-[#ff9900] dark:text-[#FFC000] font-family: 'Outfit', sans-serif" id="technologies">
+    {$lang === 'fr' ? "Mes créations :" : "My creations :"}
+  </h1>
 
   <div class="flex flex-row" id="row">
 
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://geodia.vercel.app/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Voir
+          {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>
       <div>
-        <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">Geodia Website</h1>
-        <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">29/11/2023  ➜  Aujourd'hui</p>
-        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">Site pour un serveur de jeux Minecraft fictif.</p>
+        <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">
+          Geodia Website
+        </h1>
+        <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">
+          29/11/2023  ➜  {$lang === 'fr' ? "Aujourd'hui" : "Today"}
+        </p>
+        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">
+          {$lang === 'fr' ? "Site pour un serveur de jeux Minecraft fictif." : "Website for a fictional Minecraft game server."}
+        </p>
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
@@ -94,16 +103,16 @@ darkMode.subscribe(value => {
     </div>
 
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
-      <a href="https://khadra.vercel.app/" target="_blank">
+      <a href="https://khadra.xyz/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Voir
+          {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>           
       <div>
         <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">Khadra</h1>
-        <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">14/06/2024  ➜  Aujourd'hui</p>
-        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">Site wiki sur l'histoire football algérien.</p>
+        <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">14/06/2024  ➜   {$lang === 'fr' ? "Aujourd'hui" : "Today"}</p>
+        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">{$lang === 'fr' ? "Site wiki sur l'histoire football algérien." : "Wiki site on the history of Algerian football."}</p>
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
@@ -150,22 +159,22 @@ darkMode.subscribe(value => {
     
 
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] mr-[25px] p-5 rounded-[10px] relative" id="crea-container">
-      <a href="https://dml-portfolio.vercel.app/" target="_blank">
+      <a href="https://djamelgaidi.me/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
-          Voir
+          {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>     
       <a href="https://github.com/DMLSurGithub/dml-website" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Code
+          {$lang === 'fr' ? "Code" : "Code"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>
       <div>
         <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">DML Portfolio</h1>
-        <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">18/06/2023  ➜  Aujourd'hui</p>
-        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">Site portfolio de Djamel Dyne GAÏDI (DML).</p>
+        <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">18/06/2023  ➜   {$lang === 'fr' ? "Aujourd'hui" : "Today"}</p>
+        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">{$lang === 'fr' ? "Site portfolio de Djamel Dyne GAÏDI (DML)." : "Portfolio site of Djamel Dyne GAÏDI (DML)."}</p>
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
@@ -217,20 +226,20 @@ darkMode.subscribe(value => {
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://dml-website-old.vercel.app/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
-          Voir
+          {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>     
       <a href="https://github.com/DMLSurGithub/dml-website-old" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Code
+          {$lang === 'fr' ? "Code" : "Code"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>         
       <div>
         <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">Old Portfolio</h1>
         <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">24/05/2023  ➜  18/06/2023</p>
-        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">Ancien site portfolio de DML. [PLUS MIS À JOUR]</p>
+        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">{$lang === 'fr' ? "Ancien site portfolio de DML. [PLUS MIS À JOUR]" : "Former DML portfolio site. [NO LONGER UPDATED]"}</p>
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
@@ -277,20 +286,20 @@ darkMode.subscribe(value => {
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] mr-[25px] p-5 rounded-[10px] relative" id="crea-container">
       <a href="https://discord-invitation.vercel.app" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
-          Voir
+          {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a> 
       <a href="https://github.com/DMLSurGithub/Discord-Invitation" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Code
+          {$lang === 'fr' ? "Code" : "Code"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>         
       <div>
         <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">Discord Invite</h1>
         <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">13/05/2023</p>
-        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">Bout de code qu'on peut customiser à sa guise.</p>
+        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">{$lang === 'fr' ? "Bout de code qu'on peut customiser à sa guise." : "A piece of code that can be customized as desired."}</p>
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">
@@ -313,20 +322,20 @@ darkMode.subscribe(value => {
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[325px] p-4 mr-5 rounded-[6px] relative" id="crea-container">
       <a href="https://securebits.vercel.app" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-[92px]" id="github-redirection">
-          Voir
+          {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a> 
       <a href="https://github.com/DMLSurGithub/SecureBits" target="_blank">
         <div class="bg-green-700 hover:bg-green-600 text-white py-[2px] px-[4px] flex rounded absolute top-4 right-4" id="github-redirection">
-          Code
+          {$lang === 'fr' ? "Code" : "Code"}
           <img class="ml-[6px] mt-[5px] h-4" src={open} alt="Open">
         </div>
       </a>          
       <div>
         <h1 class="transition-colors duration-500 text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">SecureBits</h1>
         <p class="transition-colors duration-500 text-[10px] mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">01/04/2023  ➜  02/04/2023</p>
-        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">Site qui présente la cybersécurité et l'informatique.</p>
+        <p class="transition-colors duration-500 text-[13px] mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">{$lang === 'fr' ? "Site qui présente la cybersécurité et l'informatique." : "Site that presents cybersecurity and IT."}</p>
       </div>
       <div class="flex justify-start items-end">
         <div class="flex" id="techno-crea">

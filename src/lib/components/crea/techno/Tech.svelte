@@ -1,4 +1,5 @@
 <script>
+  import { lang } from '../../../store/lang';
   import { darkMode } from '../../../store/dark.js';
   
   import htmld from '../../../images/SVG/technod/htmld.svg';
@@ -28,7 +29,9 @@ darkMode.subscribe(value => {
 
   <div class="w-full h-[2px] mb-7" style="background: linear-gradient(to right, transparent 10%, #5865f2 50%, #5865f2 50%, transparent 90%);"></div>
 
-  <h1 class="transition-all duration-500 font-extrabold pb-7 text-[40px] underline text-[#ff9900] dark:text-[#FFC000] font-family: 'Outfit', sans-serif" id="technologies">Technologies maîtrisées :</h1>
+  <h1 class="transition-all duration-500 font-extrabold pb-7 text-[40px] underline text-[#ff9900] dark:text-[#FFC000] font-family: 'Outfit', sans-serif" id="technologies">
+    {$lang === 'fr' ? "Technologies maîtrisées :" : "Mastered technologies :"}
+  </h1>  
 
   <div class="flex flex-row" id="row">
 

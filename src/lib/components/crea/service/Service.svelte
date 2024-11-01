@@ -1,4 +1,5 @@
 <script>
+  import { lang } from '../../../store/lang';
   import { darkMode } from '../../../store/dark.js';
   
   import webd from '../../../images/SVG/service/webd.svg';
@@ -20,10 +21,20 @@
       <img src={webw} alt="Web clair" class="absolute transition-opacity duration-500 ease-in-out {$darkMode ? 'opacity-100' : 'opacity-0'}">
     </div>
     
-
-    <div class="flex flex-col" id="bio-text">
-      <h1 class="transition-colors duration-500 text-[40px] mb-[10px] font-family: 'Outfit', sans-serif dark:text-white font-semibold"><span class="transition-colors duration-500 text-[#ff9900] dark:text-[#FFC000]">Développement</span> <span class="transition-colors duration-500 font-bold text-[#4e59d8] dark:text-[#5865f2]">Web</span></h1>
-      <p class="transition-colors duration-500 text-[17px] text-black dark:text-[#868894] font-family: 'Outfit', sans-serif dark:text-white">Pour l'instant je suis spécialisé dans le développement Web, offrant des solutions pour répondre à vos besoins. J’utilise les framework Svelte, reconnu pour sa rapidité et son efficacité, combiné avec TailwindCSS pour un design moderne et réactif. Mon objectif est de créer des sites Web performants et esthétiquement agréables.</p>
+    <div class="flex flex-col w-[2000px]" id="bio-text">
+      <h1 class="transition-colors duration-500 text-[40px] mb-[10px] font-family: 'Outfit', sans-serif dark:text-white font-semibold">
+        <span class="transition-colors duration-500 text-[#ff9900] dark:text-[#FFC000]">
+          {$lang === 'fr' ? "Développement" : "Web"}
+        </span> 
+        <span class="transition-colors duration-500 font-bold text-[#4e59d8] dark:text-[#5865f2]">
+          {$lang === 'fr' ? "Web" : "Development"}
+        </span>
+      </h1>
+      <p class="transition-colors duration-500 text-[17px] text-black dark:text-[#868894] font-family: 'Outfit', sans-serif dark:text-white">
+        {$lang === 'fr' ? "Pour l'instant je suis spécialisé dans le développement Web, offrant des solutions pour répondre à vos besoins. J’utilise le framework Svelte, reconnu pour sa rapidité et son efficacité, combiné avec TailwindCSS pour un design moderne et réactif. Mon objectif est de créer des sites Web performants et esthétiquement agréables." 
+        : 
+        "Currently, I specialize in web development, offering solutions to meet your needs. I use the Svelte framework, known for its speed and efficiency, combined with TailwindCSS for a modern and responsive design. My goal is to create high-performance and aesthetically pleasing websites."}
+      </p>
     </div>
 
   </div>
