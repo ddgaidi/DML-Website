@@ -1,32 +1,33 @@
-<script>
+<script lang="ts">
   import { lang } from '../../../store/lang';
   import { darkMode } from '../../../store/dark.js';
-  
+
   import webd from '../../../images/SVG/service/webd.svg';
   import webw from '../../../images/SVG/service/webw.svg';
-  
+
   let darkModeValue = false;
 
   darkMode.subscribe(value => {
     darkModeValue = value;
   });
+
+  $: primaryColorClass = $lang === 'fr' ? 'text-[#ff9900] dark:text-[#FFC000]' : 'text-[#4e59d8] dark:text-[#5865f2] font-bold';
+  $: secondaryColorClass = $lang === 'fr' ? 'text-[#4e59d8] dark:text-[#5865f2] font-bold' : 'text-[#ff9900] dark:text-[#FFC000]';
 </script>
 
 <div class="transition-colors duration-500 pt-[100px] bg-[#f4f3fc] dark:bg-[#0C0C12] flex justify-center items-center" id="biographie">
-
   <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex items-center w-[800px] p-5 rounded-[10px]" id="bio-container">
-
     <div class="relative flex items-center mr-7 mt-5 w-[700px]" id="web">
-      <img src={webd} alt="Web sombre" class="absolute transition-opacity duration-500 ease-in-out {$darkMode ? 'opacity-0' : 'opacity-100'}">
-      <img src={webw} alt="Web clair" class="absolute transition-opacity duration-500 ease-in-out {$darkMode ? 'opacity-100' : 'opacity-0'}">
+      <img src={webd} alt="Web sombre" class="absolute transition-opacity duration-500 ease-in-out {darkModeValue ? 'opacity-0' : 'opacity-100'}">
+      <img src={webw} alt="Web clair" class="absolute transition-opacity duration-500 ease-in-out {darkModeValue ? 'opacity-100' : 'opacity-0'}">
     </div>
     
     <div class="flex flex-col w-[2000px]" id="bio-text">
-      <h1 class="transition-colors duration-500 text-[40px] mb-[10px] font-family: 'Outfit', sans-serif dark:text-white font-semibold">
-        <span class="transition-colors duration-500 text-[#ff9900] dark:text-[#FFC000]">
+      <h1 class="text-[40px] mb-[10px] font-family: 'Outfit', sans-serif dark:text-white font-semibold">
+        <span class="{primaryColorClass}">
           {$lang === 'fr' ? "Développement" : "Web"}
-        </span> 
-        <span class="transition-colors duration-500 font-bold text-[#4e59d8] dark:text-[#5865f2]">
+        </span>
+        <span class="{secondaryColorClass}">
           {$lang === 'fr' ? "Web" : "Development"}
         </span>
       </h1>
@@ -36,6 +37,5 @@
         "Currently, I specialize in web development, offering solutions to meet your needs. I use the Svelte framework, known for its speed and efficiency, combined with TailwindCSS for a modern and responsive design. My goal is to create high-performance and aesthetically pleasing websites."}
       </p>
     </div>
-
   </div>
 </div>
