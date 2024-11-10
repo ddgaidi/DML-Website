@@ -24,8 +24,10 @@
   }
 </script>
 
-<div class="transition-colors duration-500 flex justify-between items-center pt-[30px] pb-[10px] bg-[#edebf5] dark:bg-[#0a0a0f]" id="footer">
-  <div class="ml-[130px] pb-[120px] pr-[120px] relative" id="pp-container">
+<div class="transition-colors duration-500 flex flex-col lg:flex-row justify-between items-center pt-[30px] pb-[10px] bg-[#edebf5] dark:bg-[#0a0a0f]" id="footer">
+  
+  <!-- Profile Picture Container -->
+  <div class="ml-[130px] pb-[120px] pr-[120px] relative hidden lg:block" id="pp-container">
     <img 
       class="absolute w-[100px] rounded-[30px] transition-all duration-[350ms] ease-in-out transform {hover ? '-rotate-[25deg]' : ''} {hover ? 'opacity-0' : 'opacity-100'}" 
       src={pp} 
@@ -46,9 +48,10 @@
     >
   </div>
 
+  <!-- Description Container -->
   <div id="center">
     <div class="description-container">
-      <p class="transition-colors duration-500 text-center text-l text-black dark:text-[#ffffff] mb-2.5 font-family: 'Outfit', sans-serif">
+      <p class="transition-colors duration-500 text-center text-xs lg:text-l text-black dark:text-[#ffffff] mb-2.5 font-family: 'Outfit', sans-serif">
         {#if $lang === 'fr'}
           Je suis un jeune Développeur !<br>Je fais principalement du Frontend en utilisant le Framework Svelte.
         {:else}
@@ -57,7 +60,7 @@
       </p>
     </div>
     <div class="bydml-container">
-      <p class="transition-colors duration-500 text-center text-l text-black dark:text-[#ffffff] font-family: 'Outfit', sans-serif">
+      <p class="transition-colors duration-500 text-center text-xs lg:text-l text-black dark:text-[#ffffff] font-family: 'Outfit', sans-serif">
         {#if $lang === 'fr'}
           Fais avec ❤️ par <a class="transition-colors duration-500 text-black dark:text-[#ffffff] underline hover:text-[#5865f2] font-family: 'Outfit', sans-serif" href="https://github.com/DMLSurGithub/" target="_blank">DML</a>
         {:else}
@@ -67,7 +70,8 @@
     </div>
   </div>
 
-  <div class="mr-[130px]" id="reseau-container">
+  <!-- Social Networks Container (Desktop only) -->
+  <div class="mr-[130px] hidden lg:block" id="reseau-container">
     <h6 class="transition-colors duration-500 flex text-l text-black dark:text-[#ffffff] mb-2.5 font-family: 'Outfit', sans-serif">
       {#if $lang === 'fr'} Réseaux Sociaux : {:else} Social Networks : {/if}
     </h6>
@@ -80,4 +84,5 @@
       </a>
     </div>
   </div>
+
 </div>
