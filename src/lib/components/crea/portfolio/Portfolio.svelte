@@ -7,7 +7,6 @@
   import svelted from '../../../images/SVG/technod/svelted.svg';
   import tailwindd from '../../../images/SVG/technod/tailwindd.svg';
   import jsd from '../../../images/SVG/technod/javascriptd.svg';
-  import nextd from '../../../images/SVG/technod/nextd.svg';
   import pythond from '../../../images/SVG/technod/pythond.svg';
   import sqld from '../../../images/SVG/technod/databased.svg';
   import gitd from '../../../images/SVG/technod/gitd.svg';
@@ -18,7 +17,6 @@
   import sveltew from '../../../images/SVG/technow/sveltew.svg';
   import tailwindw from '../../../images/SVG/technow/tailwindw.svg';
   import jsw from '../../../images/SVG/technow/javascriptw.svg';
-  import nextw from '../../../images/SVG/technow/nextw.svg';
   import pythonw from '../../../images/SVG/technow/pythonw.svg';
   import sqlw from '../../../images/SVG/technow/databasew.svg';
   import gitw from '../../../images/SVG/technow/gitw.svg';
