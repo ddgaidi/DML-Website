@@ -68,8 +68,12 @@
     <!-- Bouton de thème -->
     <div class="transition-all duration-500 group bg-[#d4d5e2] dark:bg-[#14141E] flex justify-center items-center cursor-pointer rounded-[20px] w-[53.5px] h-[53.5px] border-2 border-solid border-[#aaabbb] dark:border-[#868796] hover:bg-[#bdbeca] dark:hover:bg-[#23232e] hover:border-2 hover:border-[#9697a5] dark:hover:border-[#b5b6c9]" id="theme" on:click={toggleTheme} role="button" tabindex="0" on:keydown={e => { if (e.key === 'Enter') toggleTheme(); }}>
       <div class="mx-[10px] my-[10px]">
-        <img src={sun} alt="HTML Noir" class="absolute top-[34px] left-[563px] transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-100' : 'opacity-0'}" />
-        <img src={moon} alt="HTML Blanc" class="absolute top-[34px] left-[564px] transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-0' : 'opacity-100'}" />
+        <div class="mt-[23px] mr-[25px]">
+        <img src={sun} alt="HTML Noir" class="absolute transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-100' : 'opacity-0'}" />
+        </div>
+        <div class="mb-[70px]">
+        <img src={moon} alt="HTML Blanc" class="absolute transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-0' : 'opacity-100'}" />
+        </div>
       </div>
     </div>
 
@@ -89,8 +93,12 @@
     <!-- Bouton de langue -->
     <div class="transition-colors duration-500 group bg-[#d4d5e2] dark:bg-[#14141E] flex justify-center items-center cursor-pointer rounded-[20px] w-[53.5px] h-[53.5px] border-2 border-solid border-[#aaabbb] dark:border-[#868796] hover:bg-[#bdbeca] dark:hover:bg-[#23232e] hover:border-2 hover:border-[#9697a5] dark:hover:border-[#b5b6c9]" id="langue" on:click={toggleLanguage} role="button" tabindex="0" on:keydown={e => { if (e.key === 'Enter' || e.key === ' ') toggleLanguage(); }}>
       <button class="mx-[10px] my-[10px]">
-        <img src={tradb} alt="Traduction Sombre" class="absolute top-[34px] right-[563px] transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-100' : 'opacity-0'}" />
-        <img src={tradw} alt="Traduction Clair" class="absolute top-[34px] right-[564px] transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-0' : 'opacity-100'}" />
+        <div class="mt-[23px] mr-[25px]">
+          <img src={tradb} alt="HTML Noir" class="absolute transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-100' : 'opacity-0'}" />
+          </div>
+          <div class="mb-[70px]">
+          <img src={tradw} alt="HTML Blanc" class="absolute transition-opacity duration-500 ease-in-out h-[25px] {$darkMode ? 'opacity-0' : 'opacity-100'}" />
+          </div>
       </button>
     </div>
   </div>
