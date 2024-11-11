@@ -24,7 +24,7 @@
   }
 </script>
 
-<div class="transition-colors duration-500 flex flex-col lg:flex-row justify-between items-center pt-[30px] pb-[10px] bg-[#edebf5] dark:bg-[#0a0a0f]" id="footer">
+<div class="transition-colors duration-500 flex flex-col lg:flex-row justify-between items-center pt-[20px] lg:pt-[30px] pb-[20px] lg:pb-[10px] bg-[#edebf5] dark:bg-[#0a0a0f]" id="footer">
   
   <!-- Profile Picture Container -->
   <div class="ml-[130px] pb-[120px] pr-[120px] relative hidden lg:block" id="pp-container">
