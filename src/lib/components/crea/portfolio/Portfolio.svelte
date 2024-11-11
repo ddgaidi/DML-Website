@@ -40,7 +40,7 @@
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-4" id="row">
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[250px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
       <a href="https://geodia.vercel.app/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-2 lg:top-4 lg:right-4" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[250px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
       <a href="https://khadra.xyz/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-2 lg:top-4 lg:right-4" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
@@ -156,7 +156,7 @@
 
     
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[250px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[10px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[10px] relative" id="crea-container">
       <a href="https://djamelgaidi.me/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-[65px] lg:top-4 lg:right-[92px]" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
@@ -216,7 +216,7 @@
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[250px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
       <a href="https://dml-website-old.vercel.app/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-[65px] lg:top-4 lg:right-[92px]" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
@@ -276,7 +276,7 @@
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[250px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[10px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[10px] relative" id="crea-container">
       <a href="https://discord-invitation.vercel.app" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-[65px] lg:top-4 lg:right-[92px]" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
@@ -312,7 +312,7 @@
       </div>
     </div>
 
-    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[250px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
+    <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
       <a href="https://securebits.vercel.app" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-[65px] lg:top-4 lg:right-[92px]" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
