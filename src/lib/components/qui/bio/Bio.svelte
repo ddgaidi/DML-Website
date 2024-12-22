@@ -8,7 +8,7 @@
   <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col lg:flex-row items-center w-[90%] lg:max-w-[800px] p-4 lg:p-5 rounded-[10px]" id="bio-container">
     
     <!-- Photo de profil -->
-    <div class="mb-4 lg:mb-0 lg:mr-7 w-full lg:w-auto flex justify-center" id="pdp">
+    <div class="mb-4 lg:mb-0 lg:mr-7 w-full lg:w-auto hidden lg:flex justify-center" id="pdp">
       <img class="w-[40%] lg:w-[300px] rounded-[20px] lg:rounded-[40px]" src={pdp} alt="Photo_de_profil">
     </div>
     

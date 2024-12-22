@@ -49,13 +49,13 @@
       </a>
       <div>
         <h1 class="transition-colors duration-500 text-[15px] lg:text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">
-          Geodia Website
+          Wizorah Website
         </h1>
         <p class="transition-colors duration-500 text-[8px] lg:text-[10px] mb-[5px] lg:mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">
           29/11/2023  ➜  {$lang === 'fr' ? "Aujourd'hui" : "Today"}
         </p>
         <p class="transition-colors duration-500 text-[10px] lg:text-[13px] lg:mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">
-          {$lang === 'fr' ? "Site pour un serveur de jeux Minecraft fictif." : "Website for a fictional Minecraft game server."}
+          {$lang === 'fr' ? "Site pour un serveur de jeux Minecraft Bedrock." : "Website for a Minecraft Bedrock game server."}
         </p>
       </div>
       <div class="flex justify-start items-end">
