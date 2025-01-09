@@ -31,9 +31,7 @@ darkMode.subscribe(value => {
 });
 </script>
 
-<div class="transition-all duration-500 flex flex-col items-center justify-center pt-[41px] lg:pt-[50px] bg-[#f4f3fc] dark:bg-[#0C0C12]" id="techno-container">
-
-  <div class="w-full h-[2px] mb-7" style="background: linear-gradient(to right, transparent 10%, #5865f2 50%, #5865f2 50%, transparent 90%);"></div>
+<div class="transition-all duration-500 flex flex-col items-center justify-center pt-[41px] lg:pt-[90px] bg-[#f4f3fc] dark:bg-[#0C0C12]" id="techno-container">
 
   <h1 class="transition-all duration-500 font-extrabold pb-7 text-[25px] lg:text-[40px] underline text-[#ff9900] dark:text-[#FFC000] font-family: 'Outfit', sans-serif" id="technologies">
     {$lang === 'fr' ? "Technologies maîtrisées :" : "Mastered technologies :"}
