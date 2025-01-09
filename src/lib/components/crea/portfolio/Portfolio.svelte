@@ -65,7 +65,7 @@
     </div>
 
     <div class="transition-colors duration-500 bg-[#d4d5e2] dark:bg-[#14141E] flex flex-col justify-between w-[270px] lg:w-[325px] px-3 pt-[17px] pb-[10px] lg:p-4 rounded-[6px] relative" id="crea-container">
-      <a href="https://geodia.fr/" target="_blank">
+      <a href="https://wizorah.fr/" target="_blank">
         <div class="bg-red-700 hover:bg-red-600 text-white py-[2px] px-[4px] flex rounded absolute text-[10px] lg:text-[16px] top-2 right-2 lg:top-4 lg:right-4" id="github-redirection">
           {$lang === 'fr' ? "Voir" : "View"}
           <img class="ml-[6px] mt-[1px] lg:mt-[5px] h-3 lg:h-4" src={open} alt="Open">
@@ -76,7 +76,7 @@
           Wizorah Website
         </h1>
         <p class="transition-colors duration-500 text-[8px] lg:text-[10px] mb-[5px] lg:mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">
-          29/11/2023  ➜  {$lang === 'fr' ? "Aujourd'hui" : "Today"}
+          10/12/2024  ➜  {$lang === 'fr' ? "Aujourd'hui" : "Today"}
         </p>
         <p class="transition-colors duration-500 text-[10px] lg:text-[13px] lg:mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">
           {$lang === 'fr' ? "Site pour un serveur de jeux Minecraft Bedrock." : "Website for a Minecraft Bedrock game server."}
@@ -139,7 +139,7 @@
       </a>
       <div>
         <h1 class="transition-colors duration-500 text-[15px] lg:text-[20px] mb-[0px] mt-[-10px] font-family: 'Outfit', sans-serif text-[#4e59d8] dark:text-[#5865f2] font-bold">DML Portfolio</h1>
-        <p class="transition-colors duration-500 text-[8px] lg:text-[10px] mb-[5px] lg:mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">18/06/2023  ➜   {$lang === 'fr' ? "Aujourd'hui" : "Today"}</p>
+        <p class="transition-colors duration-500 text-[8px] lg:text-[10px] mb-[5px] lg:mb-[15px] font-family: 'Outfit', sans-serif text-black dark:text-white">18/06/2023  ➜  25/06/2023</p>
         <p class="transition-colors duration-500 text-[10px] lg:text-[13px] lg:mb-[10px] w-[300px] font-family: 'Outfit', sans-serif text-black dark:text-white">{$lang === 'fr' ? "Site portfolio de DML." : "Portfolio site of DML."}</p>
       </div>
       <div class="flex justify-start items-end">
