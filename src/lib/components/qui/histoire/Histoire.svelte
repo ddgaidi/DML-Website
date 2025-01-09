@@ -1,6 +1,6 @@
 <script lang="ts">
   import { lang } from '../../../store/lang';
-  import wizo from '../../../images/IMG/histoire/wizo.png';
+  import wizo from '../../../images/IMG/wizo.png';
 </script>
 
 <div class="transition-colors duration-500 pt-[20px] lg:pt-[50px] pb-[20px] lg:pb-[30px] flex flex-col items-center justify-center bg-[#f4f3fc] dark:bg-[#0C0C12]" id="quest-container">

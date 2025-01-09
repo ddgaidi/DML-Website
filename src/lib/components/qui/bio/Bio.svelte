@@ -1,6 +1,6 @@
 <script lang="ts">
   import { lang } from '../../../store/lang';
-  import pdp from '../../../images/IMG/pdp/pdp.png';
+  import pdp from '../../../images/IMG/pdp/pdp.gif';
 </script>
 
 <div class="transition-colors duration-500 lg:pt-[90px] pt-[70px] bg-[#f4f3fc] dark:bg-[#0C0C12] flex justify-center items-center" id="biographie">
