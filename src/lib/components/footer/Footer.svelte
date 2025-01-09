@@ -53,7 +53,7 @@
     <div class="description-container">
       <p class="transition-colors duration-500 text-center text-xs lg:text-l text-black dark:text-[#ffffff] mb-2.5 font-family: 'Outfit', sans-serif">
         {#if $lang === 'fr'}
-          Je suis un jeune Développeur !<br>Je fais principalement du Frontend en utilisant le Framework Svelte.
+          Je suis un jeune Développeur !<br/>J'ai une imagination débordante, alors n'hésitez pas à suivre mes projets !
         {:else}
           I am a young Developer!<br>I mainly work on Frontend using the Svelte Framework.
         {/if}
@@ -76,7 +76,7 @@
       {#if $lang === 'fr'} Réseaux Sociaux : {:else} Social Networks : {/if}
     </h6>
     <div class="flex">
-      <button on:click={() => copyToClipboard('dml130ris')} class="ml-[40px]">
+      <button on:click={() => copyToClipboard('dml.exe')} class="ml-[40px]">
         <img class="transition-colors duration-500 w-[20px] hover:brightness-[-180%] dark:hover:brightness-[180%]" src={discord} alt="Discord Logo">
       </button>      
       <a href="https://github.com/DMLSurGithub/" target="_blank" class="ml-[15px]">

@@ -10,11 +10,11 @@ const transporter = nodemailer.createTransport({
 });
 
 export const POST: RequestHandler = async ({ request }) => {
-  const { prenom, nom, email, objet, message } = await request.json();
+  const { prenom, discord, email, objet, message } = await request.json();
 
   const emailContent = `
     Prénom : ${prenom}
-    Nom : ${nom}
+    DIscord : ${discord}
     E-mail : ${email}
 
     Message :

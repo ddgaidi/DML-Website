@@ -6,6 +6,7 @@
   import jb from '../../../images/IMG/logiciel/jb.png';
   import github from '../../../images/IMG/logiciel/github.png';
   import micro from '../../../images/IMG/logiciel/365.png';
+  import aseprite from '../../../images/IMG/logiciel/aseprite.png';
 
 let darkModeValue = false;
 
@@ -22,7 +23,7 @@ darkMode.subscribe(value => {
     {$lang === 'fr' ? "Logiciels maîtrisés :" : "Mastered software :"}
   </h1>  
 
-  <div class="grid grid-cols-2 lg:grid-cols-4" id="row">
+  <div class="grid grid-cols-2 lg:grid-cols-3" id="row">
 
     <a class="flex flex-col items-center m-5 no-underline" href="https://code.visualstudio.com/" target="_blank">
       <div class="relative transition-all duration-300 group flex flex-col justify-center items-center bg-[#d4d5e2] dark:bg-[#14141E] w-[100px] h-[100px] lg:w-[110px] lh:h-[110px] rounded-[10px] hover:bg-[#c7c9d8] dark:hover:bg-[#191925] hover:scale-110 hover:cursor-pointer" id="html-container">
@@ -49,6 +50,13 @@ darkMode.subscribe(value => {
       <div class="relative transition-all duration-300 group flex flex-col justify-center items-center bg-[#d4d5e2] dark:bg-[#14141E] w-[100px] h-[100px] lg:w-[110px] lh:h-[110px] rounded-[10px] hover:bg-[#c7c9d8] dark:hover:bg-[#191925] hover:scale-110 hover:cursor-pointer" id="svelte-container">
         <img src={micro} alt="HTML Noir" class="absolute top-[14px] transition-opacity duration-500 ease-in-out h-[35px] lg:h-[50px]" />
         <p class="mt-[55px] transition-all duration-300 text-[14px] lg:text-[16px] text-[#5e5e5e] group-hover:text-black dark:text-[#a2a4b3] dark:group-hover:text-white no-underline font-family: 'Outfit', sans-serif">Microsoft 365</p>
+      </div>
+    </a>
+
+    <a class="flex flex-col items-center m-5 no-underline" href="https://www.aseprite.org/" target="_blank">
+      <div class="relative transition-all duration-300 group flex flex-col justify-center items-center bg-[#d4d5e2] dark:bg-[#14141E] w-[100px] h-[100px] lg:w-[110px] lh:h-[110px] rounded-[10px] hover:bg-[#c7c9d8] dark:hover:bg-[#191925] hover:scale-110 hover:cursor-pointer" id="svelte-container">
+        <img src={aseprite} alt="HTML Noir" class="absolute top-[14px] transition-opacity duration-500 ease-in-out h-[35px] lg:h-[50px]" />
+        <p class="mt-[55px] transition-all duration-300 text-[14px] lg:text-[16px] text-[#5e5e5e] group-hover:text-black dark:text-[#a2a4b3] dark:group-hover:text-white no-underline font-family: 'Outfit', sans-serif">Aseprite</p>
       </div>
     </a>
 

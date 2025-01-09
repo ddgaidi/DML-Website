@@ -2,14 +2,14 @@
   import { lang } from '../../store/lang';
 
   let prenom: string = "";
-  let nom: string = "";
+  let discord: string = "";
   let email: string = "";
   let objet: string = "";
   let message: string = "";
 
   async function validateForm() {
     const prenomElem = document.getElementById("prenom") as HTMLInputElement | null;
-    const nomElem = document.getElementById("nom") as HTMLInputElement | null;
+    const discordElem = document.getElementById("discord") as HTMLInputElement | null;
     const emailElem = document.getElementById("email") as HTMLInputElement | null;
     const objetElem = document.getElementById("objet") as HTMLInputElement | null;
     const messageElem = document.getElementById("message") as HTMLInputElement | null;
@@ -17,7 +17,7 @@
     let missingFields: string[] = [];
 
     if (!prenomElem || !prenomElem.value) missingFields.push($lang === 'fr' ? "prénom" : "first name");
-    if (!nomElem || !nomElem.value) missingFields.push($lang === 'fr' ? "nom" : "last name");
+    if (!discordElem || !discordElem.value) missingFields.push($lang === 'fr' ? "pseudo discord" : "discord username");
     if (!emailElem || !/\S+@\S+\.\S+/.test(emailElem.value)) missingFields.push($lang === 'fr' ? "email (valide)" : "valid email");
     if (!objetElem || !objetElem.value) missingFields.push($lang === 'fr' ? "objet" : "subject");
     if (!messageElem || !messageElem.value) missingFields.push($lang === 'fr' ? "message" : "message");
@@ -30,7 +30,7 @@
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prenom, nom, email, objet, message })
+        body: JSON.stringify({ prenom, discord, email, objet, message })
       });
 
       if (response.ok) {
@@ -69,11 +69,11 @@
           <input bind:value={prenom} class="transition-colors duration-500 bg-[#edeef7] dark:bg-[#1d1d2c] px-2 py-1 w-[330px] lg:w-[305px] rounded-xl border-[1px] text-[10px] lg:text-[13px] border-[#7b7c83] dark:border-[#3d3d57] text-black dark:text-white" type="text" id="prenom" name="prenom" placeholder={$lang === 'fr' ? "Obligatoire" : "Required"} required />
         </div>
 
-        <div class="mr-0 lg:mr-5 mb-5 lg:mb-0" id="nom-container">
+        <div class="mr-0 lg:mr-5 mb-5 lg:mb-0" id="discord-container">
           <h1 class="transition-colors duration-500 mb-2 text-[12px] lg:text-[15px] text-black dark:text-[#c2c4d4] font-family: 'Outfit', sans-serif dark:text-white">
-            {$lang === 'fr' ? "Votre nom :" : "Your last name :"}
+            {$lang === 'fr' ? "Votre pseudo Discord :" : "Your Discord username :"}
           </h1>
-          <input bind:value={nom} class="transition-colors duration-500 bg-[#edeef7] dark:bg-[#1d1d2c] px-2 py-1 w-[330px] lg:w-[305px] rounded-xl border-[1px] text-[10px] lg:text-[13px] border-[#7b7c83] dark:border-[#3d3d57] text-black dark:text-white" type="text" id="nom" name="nom" placeholder={$lang === 'fr' ? "Obligatoire" : "Required"} required />
+          <input bind:value={discord} class="transition-colors duration-500 bg-[#edeef7] dark:bg-[#1d1d2c] px-2 py-1 w-[330px] lg:w-[305px] rounded-xl border-[1px] text-[10px] lg:text-[13px] border-[#7b7c83] dark:border-[#3d3d57] text-black dark:text-white" type="text" id="discord" name="discord" placeholder={$lang === 'fr' ? "Obligatoire" : "Required"} required />
         </div>
 
         <div class="" id="email-container">

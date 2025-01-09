@@ -1,17 +1,6 @@
 <script>
     import { onMount } from 'svelte';
 
-onMount(async () => {
-  await fetch('/api/visits', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      page: window.location.pathname,
-      visitor_id: crypto.randomUUID() // ou un autre identifiant unique
-    })
-  });
-});
-
   import "../../app.css";
   import Navbar from '../../lib/components/navbar/Navbar.svelte';
   import Footer from '../../lib/components/footer/Footer.svelte';
