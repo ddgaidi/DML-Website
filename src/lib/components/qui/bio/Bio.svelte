@@ -9,7 +9,7 @@
     
     <!-- Photo de profil -->
     <div class="mb-4 lg:mb-0 lg:mr-7 w-full lg:w-auto hidden lg:flex justify-center" id="pdp">
-      <img class="w-[40%] lg:w-[300px] rounded-[20px] lg:rounded-[40px] pointer-events-none select-none" src={pdp} alt="Photo_de_profil">
+      <img class="w-[40%] lg:w-[300px] rounded-[20px] lg:rounded-[40px] pointer-events-none select-none" src={pdp} alt="">
     </div>
     
     <!-- Texte biographique -->

@@ -81,7 +81,7 @@
       </p>
     </div>
     <div class="hidden lg:flex items-center justify-center" id="image-informatique">
-      <img class="w-[500px] rounded-[10px] pointer-events-none select-none" src={wizo} alt="Informatique">
+      <img class="w-[500px] rounded-[10px] pointer-events-none select-none" src={wizo} alt="">
     </div>
   </div>
 

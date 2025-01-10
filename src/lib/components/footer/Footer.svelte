@@ -19,7 +19,7 @@
   
   <!-- Profile Picture Container -->
   <div class="ml-[130px] pb-[110px] pr-[120px] relative hidden lg:block" id="pp-container">
-    <img class="absolute w-[150px] pointer-events-none select-none" src={pp} alt="PP">
+    <img class="absolute w-[150px] pointer-events-none select-none" src={pp} alt="">
   </div>
 
 
