@@ -30,7 +30,7 @@
         {#if $lang === 'fr'}
           Je suis un jeune Développeur !<br/>J'ai une imagination débordante, alors n'hésitez pas à suivre mes projets !
         {:else}
-          I am a young Developer!<br>I have a wild imagination, so don't hesitate to follow my projects !
+          I am a young Developer !<br>I have a wild imagination, so don't hesitate to follow my projects !
         {/if}
       </p>
     </div>
