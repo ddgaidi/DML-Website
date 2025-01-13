@@ -25,12 +25,12 @@
 
   <!-- Description Container -->
   <div id="center">
-    <div class="description-container">
+    <div class="description-container max-md:mx-5">
       <p class="transition-colors duration-500 text-center text-xs lg:text-l text-black dark:text-[#ffffff] mb-2.5 font-family: 'Outfit', sans-serif">
         {#if $lang === 'fr'}
           Je suis un jeune Développeur !<br/>J'ai une imagination débordante, alors n'hésitez pas à suivre mes projets !
         {:else}
-          I am a young Developer!<br>I mainly work on Frontend using the Svelte Framework.
+          I am a young Developer!<br>I have a wild imagination, so don't hesitate to follow my projects !
         {/if}
       </p>
     </div>
